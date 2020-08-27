@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.app-content {
+  background-color: #282c34;
+  background-image: linear-gradient(to right bottom, #2b2bac, #3229bc, #3c25cc, #471fdc, #5412eb);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.2s linear;
+}
+
+.title {
+  text-align: center;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  width: 50px;
+  height: 50px;
+  color: red;
+  font-size: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .box {
+    width: 40px;
+    height: 40px;
+  }
+
+  .chessboard {
+    margin-bottom: 12px;
+    width: 320px;
+  }
+
+  .crown {
+    width: 32px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .chessboard {
+    margin-bottom: 100px;
+    width: 400px;
+  }
+
+  .crown {
+    width: 40px;
+  }
+}
+
+.black-bg {
+  background: black;
+}
+
+.row {
+  margin: 0;
+}
+
+.text-margin {
+  margin: 12px 0;
+  position: relative;
+  display: block;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  width: 100%;
+}
+
+.card-control {
+  padding: 10px 8px;
+  border-radius: 4px;
+  border-left: 2px solid #3dade9;
+  border-right: 2px solid #bf2fcb;
+  background-image: -webkit-linear-gradient(left, #3dade9, #bf2fcb),
+    -webkit-linear-gradient(left, #3dade9, #bf2fcb);
+  background-size: 100% 2px;
+  background-position: 0 100%, 0 0;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+}
+
+.btn-action {
+  position: relative;
+  padding: 2px 22px;
+  margin: 0 10px;
+}
+
+input[type='radio'] {
+  margin-right: 8px;
+}
